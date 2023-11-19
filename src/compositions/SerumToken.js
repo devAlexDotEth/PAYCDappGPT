@@ -1,4 +1,4 @@
-export const serumAddress = "0x8Af5D4C1b8623C62aED8C259895B21bF81036D3A";
+export const serumAddress = "0x299C2D180342d0EC735aa3B0cb6B6f1900DA3b73";
 export const serumAbi = [
   {
     inputs: [

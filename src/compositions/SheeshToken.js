@@ -1,4 +1,4 @@
-export const sheeshTokenAddress = "0x64C061c5BcA63f017Cd6bA3B26101965b6b0c0aC";
+export const sheeshTokenAddress = "0xbB4f3aD7a2cf75d8EfFc4f6D7BD21d95F06165ca";
 export const sheeshTokenABI = [
   {
     inputs: [

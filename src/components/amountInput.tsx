@@ -74,6 +74,9 @@ const AmountInput: FC<Props> = ({
       >
         +
       </Button>
+      <Body size="M" localStyles={{ lineHeight: 1, marginLeft: "var(--scale-12)" }}>
+        {`$Sheesh: ${sheeshAmount}`}
+      </Body>
     </Stack>
   );
 };
