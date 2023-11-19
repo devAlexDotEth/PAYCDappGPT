@@ -320,7 +320,7 @@ export const Home = () => {
               backdropClose={() => setIsRevealed(!isRevealed)}
               image={DialogHeader}
             >
-              <Body size="L">Purchase serums with $SHS </Body>
+              <Body size="L"> 420 Million 💲SHS Per 🧪</Body>
               <AmountInput
                 decrease={(e) => setSerumAmount((prev) => serumAmount - 1)}
                 increase={() => setSerumAmount((prev) => prev + 1)}
