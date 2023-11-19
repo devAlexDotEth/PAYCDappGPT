@@ -83,7 +83,7 @@ export const Home = () => {
         await txx.wait();
       }
 
-      alert("Purchasing serum...");
+      alert("Please confirm your serum purchase...");
       let txx = await serumContract.purchaseSerum(1, serumAmount);
       await txx.wait();
       alert("Purchased serum Successfully 🎉");
