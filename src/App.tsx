@@ -53,7 +53,7 @@ function App() {
           <StyledLink onClick={() => setIsMobileMenuOpen(false)} to="/contact"><Body theme="LIGHT" size="M" weight="BOLD" localStyles={{lineHeight: 1}}>Contact</Body></StyledLink>
           <Button onClick={() => setIsMobileMenuOpen(false)} as="a" variant='TERTIARY' size='M' after={<External />} href='https://hub.auraexchange.org/collection/ethereum/0x2d0d57d004f82e9f4471caa8b9f8b1965a814154' target="_blank">Marketplace</Button>
           <Button onClick={() => setIsMobileMenuOpen(false)} as="a" variant='TERTIARY' size='M' after={<External />} href='https://payc.engagertool.app/' target="_blank">EngageR</Button>
-          <Button onClick={() => setIsMobileMenuOpen(false)} as="a" variant='TERTIARY' size='M' after={<External />} href='https://app.uniswap.org/tokens/ethereum/0xbb4f3ad7a2cf75d8effc4f6d7bd21d95f06165ca' target="_blank">Buy $Sheesh</Button>
+          <Button onClick={() => setIsMobileMenuOpen(false)} as="a" variant='TERTIARY' size='M' after={<External />} href='https://app.uniswap.org/tokens/ethereum/0xbb4f3ad7a2cf75d8effc4f6d7bd21d95f06165ca' target="_blank">Buy Sheesh</Button>
         </Navigation>
 
         <ScrollToTopOnRouteChange />

@@ -20,7 +20,7 @@ const AmountInput: FC<Props> = ({
 }) => {
   return (
     <Stack
-      direction="HORIZONTAL"
+      direction="VERTICAL"
       space={0}
       localStyles={{
         alignItems: "center",
@@ -30,53 +30,62 @@ const AmountInput: FC<Props> = ({
       }}
       {...props}
     >
-      <Button
-        onClick={() => {
-            if(amount!=0){
-             decrease && decrease()
-            }
-
-        }}
-        size="M"
-        variant="SECONDARY"
-        href="Decrease"
-        target="_blank"
-        localStyles={{
-          width: 50,
-          borderTopRightRadius: 0,
-          borderBottomRightRadius: 0,
-        }}
-      >
-        -
-      </Button>
-      <Box
-        localStyles={{
-          borderTop: "1px solid var(--button-border)",
-          borderBottom: "1px solid var(--button-border)",
-          padding: 12,
-        }}
-      >
-        <Body size="M" localStyles={{ lineHeight: 1 }}>
-          {amount}
-        </Body>
-      </Box>
-      <Button
-        onClick={increase}
-        size="M"
-        variant="SECONDARY"
-        href="Increase"
-        target="_blank"
-        localStyles={{
-          width: 50,
-          borderBottomLeftRadius: 0,
-          borderTopLeftRadius: 0,
-        }}
-      >
-        +
-      </Button>
-      <Body size="M" localStyles={{ lineHeight: 1, marginLeft: "var(--scale-12)" }}>
-        {`$Sheesh: ${sheeshAmount}`}
+      <Body size="M" localStyles={{ lineHeight: 1, marginBottom: "var(--scale-12)" }}>
+        {`Sheesh: ${sheeshAmount}`}
       </Body>
+      <Stack
+        direction="HORIZONTAL"
+        space={0}
+        localStyles={{
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <Button
+          onClick={() => {
+              if(amount!=0){
+               decrease && decrease()
+              }
+          }}
+          size="M"
+          variant="SECONDARY"
+          href="Decrease"
+          target="_blank"
+          localStyles={{
+            width: 50,
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+          }}
+        >
+          -
+        </Button>
+        <Box
+          localStyles={{
+            borderTop: "1px solid var(--button-border)",
+            borderBottom: "1px solid var(--button-border)",
+            padding: 12,
+          }}
+        >
+          <Body size="M" localStyles={{ lineHeight: 1 }}>
+            {amount}
+          </Body>
+        </Box>
+        <Button
+          onClick={increase}
+          size="M"
+          variant="SECONDARY"
+          href="Increase"
+          target="_blank"
+          localStyles={{
+            width: 50,
+            borderBottomLeftRadius: 0,
+            borderTopLeftRadius: 0,
+          }}
+        >
+          +
+        </Button>
+      </Stack>
     </Stack>
   );
 };

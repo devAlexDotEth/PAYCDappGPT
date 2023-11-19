@@ -261,8 +261,8 @@ export const Home = () => {
             </Button>
           </Card>
           <Card
-            heading="Serum"
-            description="Purchase with $Sheesh"
+            heading="Elemental Serum"
+            description="PAYC Serums powered by $SHS"
             pfp={SerumPFP}
             direction="VERTICAL"
           >
