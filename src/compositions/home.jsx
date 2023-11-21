@@ -363,7 +363,7 @@ export const Home = () => {
               >
                 <Body size="L" localStyles={{textAlign: 'center'}} >Buy Elemental Serum</Body>
                 <Body size="S" localStyles={{ textAlign: 'center', lineHeight: 1, marginTop: "var(--scale-8)", opacity: .4 }}>
-                1 Serum = 450 Million Sheesh
+                1 Serum = 420 Million Sheesh
                 </Body>
               </Stack>
               <AmountInput
