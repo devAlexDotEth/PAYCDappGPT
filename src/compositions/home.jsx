@@ -3,7 +3,7 @@ import Button from "../components/button";
 import Stack from "../components/stack";
 import Grid from "../components/grid";
 import Banner from "../components/banner";
-import PFP from "../assets/pfp/legends.png";
+import PFP from "../assets/pfp/serum.png";
 import Card from "../components/card";
 import GenesisPFP from "../assets/pfp/genesis.png";
 import DegenHoursPFP from "../assets/pfp/degenhours.png";
@@ -52,7 +52,7 @@ export const Home = () => {
 
   async function handleBuy() {
     if (serumAmount <= 0) {
-      alert("Choose non zero amount");
+      alert("Select one or more serums");
       return 0;
     }
     let signer = await connectWallet();
@@ -103,7 +103,7 @@ export const Home = () => {
           "@media (min-width: 1080px)": { marginBottom: 50 },
         }}
       >
-        <Banner
+        {/* <Banner
           pfp={PFP}
           heading="PAYC Legends"
           description="Elvis Presley via the Rockabilly Hall of Fame Museum"
@@ -117,6 +117,32 @@ export const Home = () => {
           >
             View Collection
           </Button>
+        </Banner> */}
+
+        <Banner
+          pfp={PFP}
+          heading="Elemental Serum"
+          description="Mint Serum's for the upcoming Elemental collection"
+        >
+            <Button
+              size="M"
+              variant="PRIMARY"
+              href="..."
+              target="_blank"
+              onClick={() => setIsRevealed(!isRevealed)}
+            >
+              Buy Serum
+            </Button>
+            <Button
+              as="a"
+              size="M"
+              variant="SECONDARY"
+              href="..."
+              target="_blank"
+              disabled
+            >
+              Burn 5 Mutants 🔥
+            </Button>
         </Banner>
 
         <Grid
@@ -251,6 +277,7 @@ export const Home = () => {
               View Collection
             </Button>
             <Button
+              as="a"
               size="M"
               variant="SECONDARY"
               href="..."
@@ -266,17 +293,17 @@ export const Home = () => {
             pfp={SerumPFP}
             direction="VERTICAL"
           >
-            {/* <Button size='M' variant="SECONDARY" href='...' target="_blank" disabled>Buy with Sheesh</Button> */}
-            <Button
+            {/* <Button
+              as="a"
               size="M"
               variant="SECONDARY"
-              href="..."
+              href="https://opensea.io/collection/paycserums"
               target="_blank"
-              onClick={() => setIsRevealed(!isRevealed)}
             >
-              Buy with Sheesh
-            </Button>
+              View Collection
+            </Button> */}
             <Button
+              as="a"
               size="M"
               variant="SECONDARY"
               href="..."
@@ -284,6 +311,15 @@ export const Home = () => {
               disabled
             >
               Burn 5 Mutants 🔥
+            </Button>
+            <Button
+              size="M"
+              variant="PRIMARY"
+              href="..."
+              target="_blank"
+              onClick={() => setIsRevealed(!isRevealed)}
+            >
+              Buy with Sheesh
             </Button>
           </Card>
           <Card
@@ -320,7 +356,16 @@ export const Home = () => {
               backdropClose={() => setIsRevealed(!isRevealed)}
               image={DialogHeader}
             >
-              <Body size="L"> 420 Million 💲SHS Per 🧪</Body>
+              <Stack
+              direction="VERTICAL"
+              space={"var(--scale-4)"}
+              localStyles={{ justifyContent: "center" }}
+              >
+                <Body size="L" localStyles={{textAlign: 'center'}} >Buy Elemental Serum</Body>
+                <Body size="S" localStyles={{ textAlign: 'center', lineHeight: 1, marginTop: "var(--scale-8)", opacity: .4 }}>
+                1 Serum = 450 Million Sheesh
+                </Body>
+              </Stack>
               <AmountInput
                 decrease={(e) => setSerumAmount((prev) => serumAmount - 1)}
                 increase={() => setSerumAmount((prev) => prev + 1)}
@@ -338,7 +383,7 @@ export const Home = () => {
                   onClick={() => setIsRevealed((prev) => !prev)}
                   localStyles={{ marginTop: "var(--scale-8)" }}
                 >
-                  Close
+                  Cancel
                 </Button>
                 <Button
                   size="M"
@@ -346,10 +391,10 @@ export const Home = () => {
                   onClick={() => handleBuy()}
                   localStyles={{ marginTop: "var(--scale-8)" }}
                 >
-                  Buy Serum
+                  Buy Now
                 </Button>
-                {/* <Button size='M' variant="PRIMARY" onClick={() => {}} localStyles={{marginTop: 'var(--scale-8)'}}>Submit</Button> */}
               </Stack>
+
             </Dialog>
           )}
         </Grid>

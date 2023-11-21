@@ -26,13 +26,9 @@ const AmountInput: FC<Props> = ({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginBottom: "var(--scale-12)",
       }}
       {...props}
     >
-      <Body size="M" localStyles={{ lineHeight: 1, marginBottom: "var(--scale-12)" }}>
-        {`Sheesh: ${sheeshAmount}`}
-      </Body>
       <Stack
         direction="HORIZONTAL"
         space={0}
@@ -86,6 +82,9 @@ const AmountInput: FC<Props> = ({
           +
         </Button>
       </Stack>
+      <Body size="S" localStyles={{ lineHeight: 1, marginTop: "var(--scale-24)" }}>
+        {`Total: $${sheeshAmount} (SHS)`}
+      </Body>
     </Stack>
   );
 };
