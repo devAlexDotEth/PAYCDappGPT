@@ -136,10 +136,9 @@ export const Home = () => {
             <Button
               as="a"
               size="M"
-              variant="SECONDARY"
-              href="..."
+              variant="PRIMARY"
+              href="https://burn.pepeapeyachtclub.com"
               target="_blank"
-              disabled
             >
               Burn 5 Mutants 🔥
             </Button>
@@ -279,10 +278,9 @@ export const Home = () => {
             <Button
               as="a"
               size="M"
-              variant="SECONDARY"
-              href="..."
+              variant="PRIMARY"
+              href="https://burn.pepeapeyachtclub.com"
               target="_blank"
-              disabled
             >
               Burn 5 Mutants 🔥
             </Button>
@@ -306,9 +304,8 @@ export const Home = () => {
               as="a"
               size="M"
               variant="SECONDARY"
-              href="..."
+              href="https://burn.pepeapeyachtclub.com"
               target="_blank"
-              disabled
             >
               Burn 5 Mutants 🔥
             </Button>
