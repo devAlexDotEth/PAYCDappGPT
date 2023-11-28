@@ -252,12 +252,11 @@ export const Home = () => {
             <Button
               as="a"
               size="M"
-              variant="SECONDARY"
-              href="..."
+              variant="PRIMARY"
+              href="https://legends.pepeapeyachtclub.com"
               target="_blank"
-              disabled
             >
-              Portal Paused
+              Select Portal
             </Button>
           </Card>
           <Card
