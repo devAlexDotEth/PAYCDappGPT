@@ -31,8 +31,8 @@ export const Merch: FC<{}> = () => {
               },
             }}>
             <Card heading="Beyond Superstition" description='Merch by PAYCBATMAN' pfp={BatmanPFP} direction="HORIZONTAL">
-              <Button as="a" size='M' variant='SECONDARY' href='https://www.beyondsuperstition.com/store' target="_blank">View Store</Button>
               <Button as="a" size='M' variant="PRIMARY" href='https://www.beyondsuperstition.com/contact' target="_blank">Contact Store</Button>
+              <Button as="a" size='M' variant='SECONDARY' href='https://www.beyondsuperstition.com/store' target="_blank">View Store</Button>
             </Card>
           </Grid>
 
