@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { CSSObject } from '@emotion/react';
 import Box from './box';
-import image from '../assets/banner/serum.gif';
+import image from '../assets/banner/serum.png';
 import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
 import Body from './body';
