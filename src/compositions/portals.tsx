@@ -42,7 +42,7 @@ export const Portals: FC<{}> = () => {
             </Card>
             <Card heading="Legends" description='Past &amp; Present Icons' pfp={LegendsPFP} direction="HORIZONTAL">
               <Button as="a" size='M' variant='SECONDARY' href='https://hub.auraexchange.org/collection/ethereum/0x0f4186a53774f4c73cb90f278d26094cce765720' target="_blank">View Collection</Button>
-              <Button as="a" size='M' variant="PRIMARY" href='...' target="_blank" disabled>Select Portal</Button>
+              <Button as="a" size='M' variant="PRIMARY" href='https://legends.pepeapeyachtclub.com' target="_blank">Select Portal</Button>
             </Card>
           </Grid>
 
