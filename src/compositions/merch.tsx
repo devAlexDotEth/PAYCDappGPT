@@ -30,7 +30,7 @@ export const Merch: FC<{}> = () => {
                 gridTemplateColumns: '1fr',
               },
             }}>
-            <Card heading="Beyond Superstition" description='Merch by PAYCBATMAN' pfp={BatmanPFP} direction="HORIZONTAL">
+            <Card heading="Pepe Ape Life" description='Merch by PAYCBATMAN' pfp={BatmanPFP} direction="HORIZONTAL">
               <Button as="a" size='M' variant="SECONDARY" href='https://www.pepeapelife.com/contact' target="_blank">Contact Store</Button>
               <Button as="a" size='M' variant='PRIMARY' href='https://www.pepeapelife.com/store' target="_blank">View Store</Button>
             </Card>
