@@ -309,6 +309,15 @@ export const Home = () => {
               Burn 5 Mutants 🔥
             </Button>
             <Button
+              as="a"
+              size="M"
+              variant="PRIMARY"
+              href="https://hub.auraexchange.org/ethereum/asset/0x299c2d180342d0ec735aa3b0cb6b6f1900da3b73:1?tab=info"
+              target="_blank"
+            >
+              View Collection
+            </Button>
+            {/* <Button
               size="M"
               variant="PRIMARY"
               href="..."
@@ -316,7 +325,7 @@ export const Home = () => {
               onClick={() => setIsRevealed(!isRevealed)}
             >
               Buy with Sheesh
-            </Button>
+            </Button> */}
           </Card>
           <Card
             heading="Elementals"

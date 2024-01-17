@@ -31,7 +31,7 @@ export const Sheesh: FC<{}> = () => {
                 gridTemplateColumns: '1fr',
               },
             }}>
-            <Card heading="Sheesh SPL" description='A Meme-First Coin • Available on CoinLev' pfp={SOL} direction="HORIZONTAL">
+            <Card heading="Sheesh SPL" description='Your ticket to the Sheesh.Meme launchpad' pfp={SOL} direction="HORIZONTAL">
               <Button as="a" size='M' variant="SECONDARY" href='https://raydium.io/swap/?inputCurrency=sol&inputSymbol=ShEEsu&outputCurrency=ShEEsukacNfbBpULD1xtCZKjeMMzvc78xufMDuE3jvB&fixed=in' target="_blank">Buy</Button>
               <Button as="a" size='M' variant='PRIMARY' href='https://www.sheesh.meme' target="_blank">Visit Website</Button>
             </Card>
