@@ -336,18 +336,16 @@ export const Home = () => {
             <Button
               size="M"
               variant="SECONDARY"
-              href="..."
+              href="https://hub.auraexchange.org/ethereum/collection/0x732fd6934d311dca7c9b58a9b7694bb70113b115"
               target="_blank"
-              disabled
             >
               View Collection
             </Button>
             <Button
               size="M"
-              variant="SECONDARY"
-              href="..."
+              variant="PRIMARY"
+              href="https://paycelementals.netlify.app"
               target="_blank"
-              disabled
             >
               Apply Serum
             </Button>
