@@ -334,6 +334,7 @@ export const Home = () => {
             direction="VERTICAL"
           >
             <Button
+              as="a"
               size="M"
               variant="SECONDARY"
               href="https://hub.auraexchange.org/ethereum/collection/0x732fd6934d311dca7c9b58a9b7694bb70113b115"
@@ -342,6 +343,7 @@ export const Home = () => {
               View Collection
             </Button>
             <Button
+              as="a"
               size="M"
               variant="PRIMARY"
               href="https://paycelementals.netlify.app"
