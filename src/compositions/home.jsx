@@ -329,7 +329,7 @@ export const Home = () => {
           </Card>
           <Card
             heading="Elementals"
-            description="Coming soon"
+            description="Mutation Collection"
             pfp={ElementalsPFP}
             direction="VERTICAL"
           >
